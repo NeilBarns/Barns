@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="//fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="-1" />
+
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <link href="Styles/index-styles.css" rel="stylesheet" />
+  <link href="Styles/user-styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Start Head Navigation -->
+  <div class="main-head">
+    <div style="
+          box-sixing: border-box;
+          border: 0px solid black;
+          background-color: white;
+          display: flex;
+          flex-flow: column nowrap;
+          display: grid;
+          grid-template-rows: 100%;
+        ">
+      <div style="
+            box-sixing: border-box;
+            border: 0px solid black;
+            background-color: #f22f46;
+            display: grid;
+            grid-template-columns: 88% 12%;
+          ">
+        <div style="
+              box-sixing: border-box;
+              border: 0px solid white;
+              background-color: #f22f46;
+              display: flex;
+              align-items: center;
+              padding-left: 3vh;
+            " class="nav-container">
+          <div id="head-nav-home" class="nav-item-conainter hover-point">
+            <!-- <div class="head-nav" onclick="toHome()"> -->
+            <div class="head-nav">
+              <span>Home</span>
+            </div>
+            <div class="nav-highlight"></div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <input id="user_designation" hidden type="text" value="<?php echo $_SESSION['login_designation'];?>" />
+  <!-- End Head Navigation -->
+
+  <!-- Start Main Content -->
+  <div id="operations" class="main-content">
+    <!--CENTER OF OPERATIONS-->
+    <!--CENTER OF OPERATIONS-->
+    <!--CENTER OF OPERATIONS-->
+    <!--CENTER OF OPERATIONS-->
+    <!--CENTER OF OPERATIONS-->
+  </div>
+  <!-- End Main Content -->
+  <div id="loadingScreen" class="loading-content"></div>
+</body>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script type="text/javascript" language="javascript">
+  var scrp = [
+    "jsControls/index-events.js",
+    //,"jsControls/students-events.js",
+  ];
+
+  scrp.forEach(update);
+
+  function update(item) {
+    var versionUpdate = new Date().getTime();
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = item + "?v=" + versionUpdate;
+    document.head.appendChild(script);
+  }
+
+</script>
+
+</html>
