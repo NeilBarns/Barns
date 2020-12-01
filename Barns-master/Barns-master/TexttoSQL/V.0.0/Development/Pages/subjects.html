@@ -1,0 +1,1397 @@
+<div class="main-content-container">
+  <!-- Start Search panel -->
+  <div class="search-panel">
+    <div class="search-panel-head">
+      <!-- Start Search Bar -->
+      <div class="search-bar">
+        <div class="search-field">
+          <input class="search-input" value="" placeholder="Search here" />
+        </div>
+
+        <div class="search-btn">
+          <button class="btn-noStyle hover-point">
+            <img src="media/search.png" class="ico-search" />
+          </button>
+        </div>
+      </div>
+      <!-- End Search Bar -->
+
+      <div class="search-panel-subhead">
+        <button id="filter-panel-btn" class="add-filter hover-point">
+          <span class="user-module-item-label" style="color: white;"
+            >Filters</span
+          >
+        </button>
+        <div id="filter-panel" class="filter-panel">
+          <div style="display: flex; flex-flow: row; align-items: center;">
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                flex-flow: column;
+                width: 100%;
+                align-self: center;
+                justify-content: center;
+              "
+            >
+              <label
+                for="filter-level"
+                class="defaultFont-label-b"
+                style="margin-bottom: 5px;"
+                >Level:</label
+              >
+              <select
+                id="filter-level"
+                name="filter-level"
+                class="filter-input-select"
+              >
+                <option class="user-finance-info-option" value="all" selected
+                  >All</option
+                >
+                <option class="user-finance-info-option" value="Nursery 1"
+                  >Nursery 1</option
+                >
+                <option class="user-finance-info-option" value="Nursery 2"
+                  >Nursery 2</option
+                >
+                <option class="user-finance-info-option" value="Kinder"
+                  >Kinder</option
+                >
+                <option class="user-finance-info-option" value="Grade 1"
+                  >Grade 1</option
+                >
+                <option class="user-finance-info-option" value="Grade 2"
+                  >Grade 2</option
+                >
+                <option class="user-finance-info-option" value="Grade 3"
+                  >Grade 3</option
+                >
+              </select>
+            </div>
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                flex-flow: column;
+                width: 100%;
+                align-self: center;
+                justify-content: center;
+              "
+            >
+              <label
+                for="filter-sy"
+                class="defaultFont-label-b"
+                style="margin-bottom: 5px;"
+                >School Year:</label
+              >
+              <select
+                id="filter-sy"
+                name="filter-sy"
+                class="filter-input-select"
+              >
+                <option class="user-sub-panel-head-option" value="2017-2018"
+                  >2017-2018</option
+                >
+                <option class="user-sub-panel-head-option" value="2018-2019"
+                  >2018-2019</option
+                >
+                <option class="user-sub-panel-head-option" value="2019-2020"
+                  >2019-2020</option
+                >
+              </select>
+            </div>
+          </div>
+          <div
+            class="pad-t-1-vh"
+            style="display: flex; flex-flow: row; align-items: center;"
+          >
+            <span class="defaultFont-label-b mr-r-2-vh">User:</span>
+            <input
+              type="checkbox"
+              id="filter-cb-active"
+              name="filter-cb-active"
+              value="active"
+              checked
+            />
+            <label for="filter-cb-active" class="defaultFont-label mr-l-5-px"
+              >Active</label
+            ><br />
+
+            <input
+              type="checkbox"
+              id="filter-cb-inactive"
+              name="filter-cb-active"
+              value="inactive"
+              class="mr-l-10-px"
+              checked
+            />
+            <label for="filter-cb-inactive" class="defaultFont-label mr-l-5-px"
+              >Inactive</label
+            ><br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-panel-content">
+      <div class="search-container">
+        <!-- Start Search items -->
+        <div id="search-items" class="search-container-1">
+          <!-- ITEMS GOES HERE -->
+          <!-- ITEMS GOES HERE -->
+          <!-- ITEMS GOES HERE -->
+        </div>
+        <!-- End Search items -->
+
+        <div class="search-panel-spacer"></div>
+        <div id="btn-subject-add">
+          <!-- Start Add panel -->
+          <div class="search-panel-footer">
+            <button id="addSubject-Modal-btn" class="hover-point add-modal">
+              <img src="media/add.png" class="ico-add" />
+
+              <span class="add-label">
+                Add Subject
+              </span>
+            </button>
+          </div>
+          <!-- End Add panel -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Search panel -->
+
+  <div class="panel-vSpacer"></div>
+
+  <!-- Start User Panel -->
+  <div id="user-panel" class="user-panel">
+    <!-- Start User Panel Head -->
+    <div class="user-panel-head">
+      <div class="user-panel-head-container">
+        <img
+          id="btn-backToSubjects"
+          src="media/left-arrow.png"
+          class="ico-back hover-point mr-r-2-vh"
+        />
+        <span id="user-panel-head-title" class="user-panel-head-title">
+          <!-- Barnedo, Neil Michael - 13058 -->
+        </span>
+        <span id="user-panel-head-title-1" class="user-panel-head-title-1">
+          <!-- Module name -->
+        </span>
+      </div>
+
+      <div class="user-panel-head-container-1">
+        <!-- <div class="user-panel-activate">
+          <span class="user-panel-activate-label">
+            Activated
+          </span>
+
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider round"></span>
+          </label>
+        </div> -->
+      </div>
+    </div>
+    <!-- End User Panel Head -->
+
+    <!-- Start User Panel Content -->
+    <div id="user-panel-content" class="user-panel-content">
+      <div id="user-info" class="user-info">
+        <form id="subj_saveForm" method="post" style="overflow: auto;">
+          <!-- Start Profile pic -->
+          <div class="user-info-banner">
+            <div class="user-info-banner-container">
+              <div id="user-prof-pic" class="subj-prof-pic hover-point"></div>
+              <input
+                id="subj-prof-pic"
+                name="subj-prof-pic"
+                type="text"
+                hidden
+              />
+            </div>
+          </div>
+          <div
+            id="subjectIco-selector1"
+            class="subjectIco-selector mr-b-1-vw mr-t-1-vw"
+          ></div>
+
+          <!-- End Profile pic -->
+
+          <!-- Start Subject info -->
+          <div class="user-info-panel-control">
+            <button
+              id="expander-user-personal-info-container-btn"
+              type="button"
+              onclick="user_subject_info()"
+              style="width: 2.5vh;"
+            >
+              <span id="expander-user-personal-info-container">-</span>
+            </button>
+
+            <div class="user-info-panel-control-label">
+              <span>Subject Information</span>
+            </div>
+          </div>
+
+          <div
+            id="user-personal-info-container"
+            class="user-personal-info-container"
+          >
+            <!-- Start Subject name -->
+            <div class="user-personal-info-row">
+              <div class="user-personal-info-label">
+                <label for="user-input-subjectName"
+                  ><span>Subject name</span></label
+                >
+              </div>
+
+              <div class="user-personal-info-field">
+                <input
+                  name="user-input-id"
+                  id="user-input-id"
+                  type="text"
+                  hidden
+                />
+                <input
+                  id="user-input-subjectName"
+                  name="user-input-subjectName"
+                  class="user-personal-info-input"
+                  type="text"
+                />
+              </div>
+            </div>
+            <!-- End Subject name -->
+
+            <!-- Start Level -->
+            <div class="user-personal-info-row mr-2-vh">
+              <div class="user-personal-info-label">
+                <label for="user-input-level">
+                  <span>Level</span>
+                </label>
+              </div>
+
+              <div class="user-personal-info-field">
+                <input
+                  id="user-input-level"
+                  name="user-input-level"
+                  class="user-personal-info-input"
+                  type="text"
+                />
+              </div>
+            </div>
+            <!-- End Level -->
+
+            <!-- Start Schedule -->
+            <div class="user-personal-info-row mr-2-vh">
+              <div class="user-personal-info-label">
+                <label>
+                  <span>Schedule</span>
+                </label>
+              </div>
+
+              <div class="user-personal-info-field">
+                <div class="weekDays-selector">
+                  <input
+                    name="user-input-schedule"
+                    type="checkbox"
+                    id="user-input-schedule-mon"
+                    class="weekday"
+                    value="Mon"
+                  />
+                  <label for="user-input-schedule-mon">M</label>
+                  <input
+                    name="user-input-schedule"
+                    type="checkbox"
+                    id="user-input-schedule-tue"
+                    class="weekday"
+                    value="Tue"
+                  />
+                  <label for="user-input-schedule-tue">T</label>
+                  <input
+                    name="user-input-schedule"
+                    type="checkbox"
+                    id="user-input-schedule-wed"
+                    class="weekday"
+                    value="Wed"
+                  />
+                  <label for="user-input-schedule-wed">W</label>
+                  <input
+                    name="user-input-schedule"
+                    type="checkbox"
+                    id="user-input-schedule-thu"
+                    class="weekday"
+                    value="Thu"
+                  />
+                  <label for="user-input-schedule-thu">T</label>
+                  <input
+                    name="user-input-schedule"
+                    type="checkbox"
+                    id="user-input-schedule-fri"
+                    class="weekday"
+                    value="Fri"
+                  />
+                  <label for="user-input-schedule-fri">F</label>
+                  <input
+                    name="user-input-schedule"
+                    type="checkbox"
+                    id="user-input-schedule-sat"
+                    class="weekday"
+                    value="Sat"
+                  />
+                  <label for="user-input-schedule-sat">S</label>
+                  <input
+                    name="user-input-schedule"
+                    type="checkbox"
+                    id="user-input-schedule-sun"
+                    class="weekday"
+                    value="Sun"
+                  />
+                  <label for="user-input-schedule-sun">S</label>
+                </div>
+              </div>
+            </div>
+            <!-- End Schedule -->
+
+            <!-- Start Start Time -->
+            <div class="user-personal-info-row mr-2-vh">
+              <div class="user-personal-info-label">
+                <label for="user-input-startTime">
+                  <span>Start Time</span>
+                </label>
+              </div>
+
+              <div class="user-personal-info-field">
+                <input
+                  id="user-input-startTime"
+                  name="user-input-startTime"
+                  class="user-personal-info-input"
+                  type="time"
+                  placeholder="00:00"
+                />
+              </div>
+            </div>
+            <!-- End Start Time -->
+
+            <!-- Start End Time -->
+            <div class="user-personal-info-row mr-2-vh">
+              <div class="user-personal-info-label">
+                <label for="user-input-endTime">
+                  <span>End Time</span>
+                </label>
+              </div>
+
+              <div class="user-personal-info-field">
+                <input
+                  id="user-input-endTime"
+                  name="user-input-endTime"
+                  class="user-personal-info-input"
+                  type="time"
+                  placeholder="00:00"
+                />
+              </div>
+            </div>
+            <!-- End End Time -->
+
+            <div class="user-personal-info-row-spacer">
+              <div
+                style="
+                  box-sixing: border-box;
+                  border-bottom: 1px solid rgb(230, 230, 230);
+                  background-color: white;
+                  height: fit-content;
+                  width: 100%;
+                "
+              ></div>
+            </div>
+
+            <!-- Start Teacher -->
+            <div class="user-personal-info-row mr-2-vh">
+              <div class="user-personal-info-label">
+                <label for="user-input-teacher"><span>Teacher</span></label>
+              </div>
+
+              <div class="user-personal-info-field">
+                <input
+                  id="user-input-teacher"
+                  class="user-personal-info-input"
+                  type="text"
+                />
+                <input
+                  id="user-input-teacher-real"
+                  name="user-input-teacher"
+                  type="text"
+                  hidden
+                />
+
+                <button id="btn-toTeacher" type="button" class="gotoTeacher">
+                  <span class="linkLabel">
+                    >>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <!-- End Teacher -->
+
+            <div id="subj-panel-bottom" class="user-panel-bottom">
+              <button class="user-panel-save hover-point" type="submit">
+                <span class="save-btn-label">
+                  Save Changes
+                </span>
+              </button>
+            </div>
+          </div>
+          <!-- End Subject info -->
+
+          <!-- End Save Changes Button -->
+        </form>
+        <!-- End Save Changes Button -->
+
+        <!-- Start Modules List info -->
+        <div class="user-info-panel-control">
+          <button
+            id="expander-user-moduleList-info-container-btn"
+            type="button"
+            onclick="user_ModuleList_info()"
+            style="width: 2.5vh;"
+          >
+            <span id="expander-user-moduleList-info-container">-</span>
+          </button>
+
+          <div class="user-info-panel-control-label">
+            <span>Modules</span>
+          </div>
+        </div>
+
+        <div
+          id="user-moduleList-info-container"
+          class="user-personal-info-container"
+          style="padding-bottom: 0px;"
+        >
+          <div id="user-module-item-row" class="user-module-item-row">
+            <div class="user-module-item-desc-1">
+              <span class="user-module-item-label"
+                >Modules not found, create one by add module</span
+              >
+            </div>
+          </div>
+          <!-- Populate Modules -->
+          <!-- Populate Modules -->
+          <!-- Populate Modules -->
+          <!-- Populate Modules -->
+          <!-- Populate Modules -->
+        </div>
+        <div id="subj-panel-module-bottom" class="user-panel-bottom">
+          <button
+            id="addModule-Modal-btn"
+            class="hover-point add-modal"
+            type="button"
+          >
+            <img src="media/add.png" class="ico-add" />
+
+            <span class="add-label">
+              Add Module
+            </span>
+          </button>
+        </div>
+
+        <!-- End Modules List info -->
+      </div>
+
+      <div class="user-panel-vSpacer">
+        <div class="user-panel-vSpacer1"></div>
+      </div>
+
+      <!-- Start Sub panel -->
+      <div class="user-sub-panel">
+        <div class="user-sub-panel-head">
+          <div class="user-sub-panel-head-container">
+            <div class="user-sub-panel-head-title">
+              <span>Learners</span>
+            </div>
+          </div>
+
+          <div class="user-sub-panel-head-container1">
+            <div class="user-sub-panel-head-lineSpace"></div>
+          </div>
+
+          <div class="user-sub-panel-head-container2">
+            <span class="user-sub-panel-head-label">
+              School year:
+            </span>
+
+            <select
+              name="sy"
+              id="subject-sy"
+              class="user-sub-panel-head-select"
+            >
+              <option class="user-sub-panel-head-option" value="2017 - 2018"
+                >2017 - 2018 (Nursery 1)</option
+              >
+              <option class="user-sub-panel-head-option" value="2018 - 2019"
+                >2018 - 2019 (Nursery 2)</option
+              >
+              <option class="user-sub-panel-head-option" value="2019 - 2020"
+                >2019 - 2020 (Kinder)</option
+              >
+            </select>
+          </div>
+        </div>
+
+        <div class="user-sub-panel-content">
+          <div
+            id="learner-sub-panel-content-container"
+            class="user-sub-panel-content-container"
+          >
+            <!-- Learner items -->
+            <!-- Learner items -->
+            <!-- Learner items -->
+            <!-- Learner items -->
+            <!-- Learner items -->
+          </div>
+
+          <div class="user-sub-panel-content-lineSpace"></div>
+
+          <div class="user-sub-panel-content-footer">
+            <!-- <button class="hover-point add-modal">
+              <img src="media/add.png" class="ico-add" />
+
+              <span class="add-label">
+                Add Module
+              </span>
+            </button> -->
+          </div>
+        </div>
+        <!-- End Sub panel -->
+      </div>
+    </div>
+    <!-- End User Panel Content -->
+
+    <!-- For module detail load -->
+    <!-- Start Module Panel Content -->
+    <div id="module-panel-content" class="module-panel-content">
+      <!-- Study materials Panel-->
+      <div class="module-sub-panel borderPanel-right">
+        <!-- Head -->
+        <div class="module-panel-title borderPanel-bottom-title">
+          <span class="user-module-item-label-2">Lessons</span>
+        </div>
+
+        <!-- Content -->
+        <div id="module-lessons" class="module-sub-panel-container">
+          <!-- populate files -->
+          <!-- populate files -->
+          <!-- populate files -->
+          <!-- populate files -->
+          <!-- populate files -->
+        </div>
+
+        <!-- Foot -->
+        <div class="module-panel-footer">
+          <button
+            class="hover-point add-modal"
+            type="button"
+            id="addLesson-Modal-btn"
+          >
+            <img src="media/add.png" class="ico-add" />
+            <span class="add-label">
+              Add Lesson
+            </span>
+          </button>
+        </div>
+      </div>
+      <!-- Quizzes Panel -->
+      <div class="module-sub-panel borderPanel-right">
+        <!-- Head -->
+        <div class="module-panel-title borderPanel-bottom-title">
+          <span class="user-module-item-label-2">Quizzes</span>
+        </div>
+
+        <!-- Content -->
+        <div id="module-quizzes" class="module-sub-panel-container">
+          <!-- populate quizzes -->
+          <!-- populate quizzes -->
+          <!-- populate quizzes -->
+          <!-- populate quizzes -->
+          <!-- populate quizzes -->
+          <!-- populate quizzes -->
+
+          <div class="module-file-row">
+            <div class="module-file-row-container-main">
+              <div class="module-file-row-container pad-t-1-vh pad-b-05-vh">
+                <span class="user-module-item-label" style="font-weight: bold;">
+                  Test File Title
+                </span>
+              </div>
+              <div class="module-file-row-container pad-b-1-vh pad-t-05-vh">
+                <span class="user-module-item-label-3">
+                  Test File Desc
+                </span>
+              </div>
+            </div>
+
+            <div class="module-file-row-container-main">
+              <div class="module-file-row-container-click">
+                <img
+                  src="media/download.png"
+                  class="ico-download hover-point"
+                />
+              </div>
+              <div class="module-file-row-container-click">
+                <img src="media/down-arrow.png" class="ico-down hover-point" />
+              </div>
+            </div>
+          </div>
+
+          <!-- populate quizzes -->
+        </div>
+
+        <!-- Foot -->
+        <div class="module-panel-footer">
+          <button
+            class="hover-point add-modal"
+            type="button"
+            id="addQuiz-Modal-btn"
+          >
+            <img src="media/add.png" class="ico-add" />
+            <span class="add-label">
+              Add Quiz
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Assignments Panel -->
+      <div class="module-sub-panel">
+        <!-- Head -->
+        <div class="module-panel-title borderPanel-bottom-title">
+          <span class="user-module-item-label-2">Assignments</span>
+        </div>
+
+        <!-- Content -->
+        <div id="module-assignments" class="module-sub-panel-container">
+          <!-- populate files -->
+          <!-- populate files -->
+          <!-- populate files -->
+          <!-- populate files -->
+
+          <div class="module-file-row">
+            <div class="module-file-row-container-main">
+              <div class="module-file-row-container pad-t-1-vh pad-b-05-vh">
+                <span class="user-module-item-label" style="font-weight: bold;">
+                  Test File Title
+                </span>
+              </div>
+              <div class="module-file-row-container pad-b-1-vh pad-t-05-vh">
+                <span class="user-module-item-label-3">
+                  Test File Desc
+                </span>
+              </div>
+            </div>
+
+            <div class="module-file-row-container-main">
+              <div class="module-file-row-container-click">
+                <img
+                  src="media/download.png"
+                  class="ico-download hover-point"
+                />
+              </div>
+              <div class="module-file-row-container-click">
+                <img src="media/down-arrow.png" class="ico-down hover-point" />
+              </div>
+            </div>
+          </div>
+
+          <!-- populate files -->
+        </div>
+
+        <!-- Foot -->
+        <div class="module-panel-footer">
+          <button
+            class="hover-point add-modal"
+            type="button"
+            id="addAssignment-Modal-btn"
+          >
+            <img src="media/add.png" class="ico-add" />
+            <span class="add-label">
+              Add Assignment
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- End Module Panel Content -->
+  </div>
+  <!-- End User Panel -->
+
+  <!-- Start Add Modal Subject -->
+  <div id="addSubject-Modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-close">&times;</span>
+        <h3 style="font-family: 'Montserrat', sans-serif;">Subject Form</h3>
+      </div>
+
+      <div class="modal-body">
+        <!-- Form -->
+        <form id="subj_addForm" method="post">
+          <div class="modal-form-line mr-b-1-vw">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-input-subjectName ">Subject name</label>
+            </div>
+            <div class="modal-form-line-input">
+              <!-- <select
+              name="modal-input-subjectName"
+              class="modal-form-input"
+              id="modal-input-subjectName"
+            >
+              <option class="user-finance-info-option" value="English"
+                >English</option
+              >
+              <option class="user-finance-info-option" value="Math"
+                >Math</option
+              >
+              <option class="user-finance-info-option" value="Science"
+                >Science</option
+              >
+              <option class="user-finance-info-option" value="Computer"
+                >Computer</option
+              >
+              <option class="user-finance-info-option" value="Filipino"
+                >Filipino</option
+              >
+            </select> -->
+              <input
+                class="modal-form-input"
+                id="modal-input-subjectName"
+                name="modal-input-subjectName"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-input-level">Level</label>
+            </div>
+            <div class="modal-form-line-input">
+              <select
+                name="modal-input-level"
+                class="modal-form-input-1"
+                id="modal-input-level"
+              >
+                <option value="" selected disabled hidden>Choose one..</option>
+                <option class="user-finance-info-option" value="Nursery 1"
+                  >Nursery 1</option
+                >
+                <option class="user-finance-info-option" value="Nursery 2"
+                  >Nursery 2</option
+                >
+                <option class="user-finance-info-option" value="Kinder"
+                  >Kinder</option
+                >
+                <option class="user-finance-info-option" value="Grade 1"
+                  >Grade 1</option
+                >
+                <option class="user-finance-info-option" value="Grade 2"
+                  >Grade 2</option
+                >
+                <option class="user-finance-info-option" value="Grade 3"
+                  >Grade 3</option
+                >
+              </select>
+            </div>
+          </div>
+
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label>Schedule</label>
+            </div>
+            <div class="modal-form-line-input">
+              <div class="user-personal-info-field">
+                <div class="weekDays-selector">
+                  <input
+                    name="modal-input-schedule"
+                    type="checkbox"
+                    id="modal-weekday-mon"
+                    class="weekday"
+                    value="Mon"
+                  />
+                  <label for="modal-weekday-mon">M</label>
+                  <input
+                    name="modal-input-schedule"
+                    type="checkbox"
+                    id="modal-weekday-tue"
+                    class="weekday"
+                    value="Tue"
+                  />
+                  <label for="modal-weekday-tue">T</label>
+                  <input
+                    name="modal-input-schedule"
+                    type="checkbox"
+                    id="modal-weekday-wed"
+                    class="weekday"
+                    value="Wed"
+                  />
+                  <label for="modal-weekday-wed">W</label>
+                  <input
+                    name="modal-input-schedule"
+                    type="checkbox"
+                    id="modal-weekday-thu"
+                    class="weekday"
+                    value="Thu"
+                  />
+                  <label for="modal-weekday-thu">T</label>
+                  <input
+                    name="modal-input-schedule"
+                    type="checkbox"
+                    id="modal-weekday-fri"
+                    class="weekday"
+                    value="Fri"
+                  />
+                  <label for="modal-weekday-fri">F</label>
+                  <input
+                    name="modal-input-schedule"
+                    type="checkbox"
+                    id="modal-weekday-sat"
+                    class="weekday"
+                    value="Sat"
+                  />
+                  <label for="modal-weekday-sat">S</label>
+                  <input
+                    name="modal-input-schedule"
+                    type="checkbox"
+                    id="modal-weekday-sun"
+                    class="weekday"
+                    value="Sun"
+                  />
+                  <label for="modal-weekday-sun">S</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-input-startTime">Start Time</label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                id="modal-input-startTime"
+                name="modal-input-startTime"
+                class="modal-form-input"
+                type="time"
+                placeholder="00:00"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-input-endTime">End Time</label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                id="modal-input-endTime"
+                name="modal-input-endTime"
+                class="modal-form-input"
+                type="time"
+                placeholder="00:00"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label>Subject Icon</label>
+            </div>
+            <div class="modal-form-line-input">
+              <div class="user-personal-info-field">
+                <button
+                  type="button"
+                  style="
+                    box-sixing: border-box;
+                    border: none;
+                    border-radius: 0.6vh;
+                    display: flex;
+                    width: fit-content;
+                    height: fit-content;
+                    padding-left: 2vh;
+                    padding-right: 2vh;
+                    padding-top: 0vh;
+                    padding-bottom: 0vh;
+                    outline: none;
+                    background-color: white;
+                    cursor: pointer;
+                  "
+                >
+                  <span id="modal-icon-preview">
+                    <i
+                      style="
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 1.5vh;
+                        color: darkgray;
+                        white-space: nowrap;
+                      "
+                      >Choose icon...</i
+                    >
+                  </span>
+                  <input
+                    id="modal-input-subjectIcon"
+                    name="modal-input-subjectIcon"
+                    type="text"
+                    hidden
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-form-line">
+            <div class="modal-form-line-label"></div>
+            <div class="modal-form-line-input">
+              <div class="user-personal-info-field">
+                <!-- Start Select Icon -->
+                <div id="subjectIco-selector" class="subjectIco-selector"></div>
+                <!-- End Select Icon -->
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              flex-flow: row-reverse nowrap;
+              align-items: center;
+            "
+          >
+            <button class="modal-form-submit" type="submit">
+              <span
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 1.35vh;
+                  color: black;
+                  font-weight: 700;
+                  white-space: nowrap;
+                "
+              >
+                Submit
+              </span>
+            </button>
+          </div>
+        </form>
+        <!-- Form -->
+      </div>
+    </div>
+  </div>
+  <!-- End Add Modal Subject -->
+
+  <!-- Start Add Modal Module -->
+  <div id="addModule-Modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-close">&times;</span>
+        <h3 style="font-family: 'Montserrat', sans-serif;">Module Form</h3>
+      </div>
+
+      <div class="modal-body">
+        <!-- Form -->
+        <form id="module_addForm" method="post">
+          <div class="modal-form-line mr-b-1-vw">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-input-moduleName">Module Title</label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                id="modal-input-moduleName"
+                name="modal-input-moduleName"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              flex-flow: row-reverse nowrap;
+              align-items: center;
+            "
+          >
+            <button class="modal-form-submit" type="submit">
+              <span
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 1.35vh;
+                  color: black;
+                  font-weight: 700;
+                  white-space: nowrap;
+                "
+              >
+                Submit
+              </span>
+            </button>
+          </div>
+        </form>
+        <!-- Form -->
+      </div>
+    </div>
+  </div>
+  <!-- Start End Modal Module -->
+
+  <!-- Start Add Modal Lesson -->
+  <div id="addLesson-Modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-close">&times;</span>
+        <h3 style="font-family: 'Montserrat', sans-serif;">Lesson Form</h3>
+      </div>
+
+      <div class="modal-body">
+        <!-- Form -->
+        <form
+          id="lesson_addForm"
+          name="lesson_addForm"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="modal-form-line mr-t-1-vw">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-input-lessonTitle">Title </label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                id="modal-input-lessonTitle"
+                name="modal-input-lessonTitle"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line mr-t-1-vw">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-input-lessonDesc">Description </label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                id="modal-input-lessonDesc"
+                name="modal-input-lessonDesc"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line mr-b-1-vw mr-t-1-vw">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-input-lessonFile">File </label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                style="border: 0px; height: 0%;"
+                id="modal-input-lessonFile"
+                name="modal-input-lessonFile"
+                type="file"
+              />
+            </div>
+          </div>
+
+          <div id="progress-wrp">
+            <div class="progress-bar"></div>
+            <div class="status">0%</div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              flex-flow: row-reverse nowrap;
+              align-items: center;
+            "
+          >
+            <button
+              id="btn-uploadLesson"
+              class="modal-form-submit"
+              type="submit"
+            >
+              <span
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 1.35vh;
+                  color: black;
+                  font-weight: 700;
+                  white-space: nowrap;
+                "
+              >
+                Submit
+              </span>
+            </button>
+          </div>
+        </form>
+        <!-- Form -->
+      </div>
+    </div>
+  </div>
+  <!-- End Add Modal Lesson -->
+
+  <!-- Start Add Modal Quiz -->
+  <div id="addQuiz-Modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-close">&times;</span>
+        <h3 style="font-family: 'Montserrat', sans-serif;">Quiz Form</h3>
+      </div>
+
+      <div class="modal-body">
+        <!-- Form -->
+        <form
+          id="quiz_addForm"
+          name="quiz_addForm"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="modal-form-line mr-t-1-vw">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-input-quizTitle">Title </label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                id="modal-input-quizTitle"
+                name="modal-input-quizTitle"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line mr-t-1-vw">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-input-quizDesc">Description </label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                id="modal-input-quizDesc"
+                name="modal-input-quizDesc"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line mr-b-1-vw mr-t-1-vw">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-input-quizFile">File </label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                style="border: 0px; height: 0%;"
+                id="modal-input-quizFile"
+                name="modal-input-quizFile"
+                type="file"
+              />
+            </div>
+          </div>
+
+          <div id="progress-wrp-quiz">
+            <div class="progress-bar"></div>
+            <div class="status">0%</div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between;">
+            <button id="btn-createQuiz" class="modal-form-submit" type="button">
+              <span
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 1.35vh;
+                  color: black;
+                  font-weight: 700;
+                  white-space: nowrap;
+                "
+              >
+                Create Quiz
+              </span>
+            </button>
+
+            <button id="btn-uploadQuiz" class="modal-form-submit" type="submit">
+              <span
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 1.35vh;
+                  color: black;
+                  font-weight: 700;
+                  white-space: nowrap;
+                "
+              >
+                Submit
+              </span>
+            </button>
+          </div>
+        </form>
+        <!-- Form -->
+      </div>
+    </div>
+  </div>
+  <!-- End Add Modal Quiz -->
+  
+  <!-- Start Add Modal Assignment -->
+  <div id="addAssignment-Modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-close">&times;</span>
+        <h3 style="font-family: 'Montserrat', sans-serif;">Assignment Form</h3>
+      </div>
+
+      <div class="modal-body">
+        <!-- Form -->
+        <form
+          id="assignment_addForm"
+          name="assignment_addForm"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="modal-form-line mr-t-1-vw">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-input-assignmentTitle">Title </label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                id="modal-input-assignmentTitle"
+                name="modal-input-assignmentTitle"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line mr-t-1-vw">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-input-assignmentDesc">Description </label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                id="modal-input-assignmentDesc"
+                name="modal-input-assignmentDesc"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line mr-b-1-vw mr-t-1-vw">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-input-assignmentFile">File </label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                style="border: 0px; height: 0%;"
+                id="modal-input-assignmentFile"
+                name="modal-input-assignmentFile"
+                type="file"
+              />
+            </div>
+          </div>
+
+          <div id="progress-wrp-assignment">
+            <div class="progress-bar"></div>
+            <div class="status">0%</div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between;">
+            <button id="btn-createAssignment" class="modal-form-submit" type="button">
+              <span
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 1.35vh;
+                  color: black;
+                  font-weight: 700;
+                  white-space: nowrap;
+                "
+              >
+                Create Assignment
+              </span>
+            </button>
+
+            <button id="btn-uploadAssignment" class="modal-form-submit" type="submit">
+              <span
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 1.35vh;
+                  color: black;
+                  font-weight: 700;
+                  white-space: nowrap;
+                "
+              >
+                Submit
+              </span>
+            </button>
+          </div>
+        </form>
+        <!-- Form -->
+      </div>
+    </div>
+  </div>
+  <!-- End Add Modal Assignment -->
+
+  <!-- Start Add Modal Filter -->
+  <div id="addFilter-Modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-close">&times;</span>
+        <h3 style="font-family: 'Montserrat', sans-serif;">Filters</h3>
+      </div>
+
+      <div class="modal-body">
+        <!-- Form -->
+        <form id="filter_addForm" method="post">
+          <div class="modal-form-line mr-b-1-vw">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-input-moduleName">Module Title</label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                name="modal-input-moduleName"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              flex-flow: row-reverse nowrap;
+              align-items: center;
+            "
+          >
+            <button class="modal-form-submit" type="submit">
+              <span
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 1.35vh;
+                  color: black;
+                  font-weight: 700;
+                  white-space: nowrap;
+                "
+              >
+                Submit
+              </span>
+            </button>
+          </div>
+        </form>
+        <!-- Form -->
+      </div>
+    </div>
+  </div>
+  <!-- Start End Modal Filter -->
+</div>

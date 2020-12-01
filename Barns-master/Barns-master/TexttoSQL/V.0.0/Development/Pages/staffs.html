@@ -1,0 +1,568 @@
+<div class="main-content-container">
+  <!-- Start Search panel -->
+  <div class="search-panel">
+    <div class="search-panel-head">
+      <!-- Start Search Bar -->
+      <div class="search-bar">
+        <div class="search-field">
+          <input class="search-input" value="" placeholder="Search here" />
+        </div>
+
+        <div class="search-btn">
+          <button class="btn-noStyle hover-point">
+            <img src="media/search.png" class="ico-search" />
+          </button>
+        </div>
+      </div>
+      <!-- End Search Bar -->
+
+      <div class="search-panel-subhead">
+        <button id="filter-panel-btn" class="add-filter hover-point">
+          <span class="user-module-item-label" style="color: white;"
+            >Filters</span
+          >
+        </button>
+        <div id="filter-panel" class="filter-panel">
+          <div style="display: flex; flex-flow: row; align-items: center;">
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                flex-flow: column;
+                width: 100%;
+                align-self: center;
+                justify-content: center;
+              "
+            >
+              <label
+                for="filter-level"
+                class="defaultFont-label-b"
+                style="margin-bottom: 5px;"
+                >Level:</label
+              >
+              <select
+                id="filter-level"
+                name="filter-level"
+                class="filter-input-select"
+              >
+                <option class="user-finance-info-option" value="all" selected
+                  >All</option
+                >
+                <option class="user-finance-info-option" value="Nursery 1"
+                  >Nursery 1</option
+                >
+                <option class="user-finance-info-option" value="Nursery 2"
+                  >Nursery 2</option
+                >
+                <option class="user-finance-info-option" value="Kinder"
+                  >Kinder</option
+                >
+                <option class="user-finance-info-option" value="Grade 1"
+                  >Grade 1</option
+                >
+                <option class="user-finance-info-option" value="Grade 2"
+                  >Grade 2</option
+                >
+                <option class="user-finance-info-option" value="Grade 3"
+                  >Grade 3</option
+                >
+              </select>
+            </div>
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                flex-flow: column;
+                width: 100%;
+                align-self: center;
+                justify-content: center;
+              "
+            >
+              <label
+                for="filter-sy"
+                class="defaultFont-label-b"
+                style="margin-bottom: 5px;"
+                >School Year:</label
+              >
+              <select
+                id="filter-sy"
+                name="filter-sy"
+                class="filter-input-select"
+              >
+                <option class="user-sub-panel-head-option" value="2017-2018"
+                  >2017-2018</option
+                >
+                <option class="user-sub-panel-head-option" value="2018-2019"
+                  >2018-2019</option
+                >
+                <option class="user-sub-panel-head-option" value="2019-2020"
+                  >2019-2020</option
+                >
+              </select>
+            </div>
+          </div>
+          <div
+            class="pad-t-1-vh"
+            style="display: flex; flex-flow: row; align-items: center;"
+          >
+            <span class="defaultFont-label-b mr-r-2-vh">User:</span>
+            <input
+              type="checkbox"
+              id="filter-cb-active"
+              name="filter-cb-active"
+              value="active"
+              checked
+            />
+            <label for="filter-cb-active" class="defaultFont-label mr-l-5-px"
+              >Active</label
+            ><br />
+
+            <input
+              type="checkbox"
+              id="filter-cb-inactive"
+              name="filter-cb-active"
+              value="inactive"
+              class="mr-l-10-px"
+              checked
+            />
+            <label for="filter-cb-inactive" class="defaultFont-label mr-l-5-px"
+              >Inactive</label
+            ><br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-panel-content">
+      <div class="search-container">
+        <!-- Start Search items -->
+        <div id="search-items" class="search-container-1">
+          <!-- ITEMS GOES HERE -->
+          <!-- ITEMS GOES HERE -->
+          <!-- ITEMS GOES HERE -->
+        </div>
+        <!-- End Search items -->
+
+        <div class="search-panel-spacer"></div>
+        <div id="btn-staff-add">
+          <!-- Start Add panel -->
+          <div class="search-panel-footer">
+            <button id="addTeacher-Modal-btn" class="hover-point add-modal">
+              <img src="media/add.png" class="ico-add" />
+
+              <span class="add-label">
+                Add Teacher
+              </span>
+            </button>
+          </div>
+          <!-- End Add panel -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Search panel -->
+
+  <div class="panel-vSpacer"></div>
+
+  <!-- Start User Panel -->
+  <div id="user-panel" class="user-panel">
+    <!-- Start User Panel Head -->
+    <div class="user-panel-head">
+      <div class="user-panel-head-container">
+        <span id="user-panel-head-title" class="user-panel-head-title">
+          <!-- Barnedo, Neil Michael - 13058 -->
+        </span>
+      </div>
+
+      <div class="user-panel-head-container-1">
+        <!-- <div class="user-panel-activate">
+          <span class="user-panel-activate-label">
+            Activated
+          </span>
+
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider round"></span>
+          </label>
+        </div> -->
+      </div>
+    </div>
+    <!-- End User Panel Head -->
+
+    <!-- Start User Panel Content -->
+    <div class="user-panel-content">
+      <div id="user-info" class="user-info">
+        <form id="tc_saveForm" method="post">
+          <!-- Start Profile pic -->
+          <div class="user-info-banner">
+            <div class="user-info-banner-container">
+              <div id="user-prof-pic" class="user-prof-pic">
+                <img
+                  src="media/profile/defaults/user.png"
+                  alt="User Profile"
+                  class="user-prof-pic-default"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- End Profile pic -->
+
+          <!-- Start Personal info -->
+          <div class="user-info-panel-control">
+            <button
+              id="expander-user-personal-info-container-btn"
+              type="button"
+              onclick="user_personal_info()"
+              style="width: 2.5vh;"
+            >
+              <span id="expander-user-personal-info-container">-</span>
+            </button>
+
+            <div class="user-info-panel-control-label">
+              <span>Personal Information</span>
+            </div>
+          </div>
+          <div id="user-staff-info">
+            <div
+              id="user-personal-info-container"
+              class="user-personal-info-container"
+            >
+              <!-- Start Surname -->
+              <div class="user-personal-info-row">
+                <div class="user-personal-info-label">
+                  <label for="user-input-surname"><span>Surname</span></label>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    name="user-input-id"
+                    id="user-input-id"
+                    type="text"
+                    hidden
+                  />
+                  <input
+                    name="user-input-surname"
+                    id="user-input-surname"
+                    class="user-personal-info-input"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- End Surname -->
+
+              <!-- Start Given name -->
+              <div class="user-personal-info-row mr-2-vh">
+                <div class="user-personal-info-label">
+                  <label for="user-input-surname"
+                    ><span>Given name</span></label
+                  >
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    id="user-input-givenname"
+                    name="user-input-givenname"
+                    class="user-personal-info-input"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- End Given name -->
+
+              <!-- Start Middle name -->
+              <div class="user-personal-info-row mr-2-vh">
+                <div class="user-personal-info-label">
+                  <label for="user-input-middlename">
+                    <span>Middle name</span>
+                  </label>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    id="user-input-middlename"
+                    name="user-input-middlename"
+                    class="user-personal-info-input"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- End Middle name -->
+
+              <!-- Start Date of birth -->
+              <div class="user-personal-info-row mr-2-vh">
+                <div class="user-personal-info-label">
+                  <label for="user-input-dob"><span>Date of birth</span></label>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    id="user-input-dob"
+                    name="user-input-dob"
+                    class="user-personal-info-input"
+                    type="date"
+                  />
+                </div>
+              </div>
+              <!-- End Date of birth -->
+
+              <div class="user-personal-info-row-spacer">
+                <div
+                  style="
+                    box-sixing: border-box;
+                    border-bottom: 1px solid rgb(230, 230, 230);
+                    background-color: white;
+                    height: fit-content;
+                    width: 100%;
+                  "
+                ></div>
+              </div>
+
+              <!-- Start Address -->
+              <div class="user-personal-info-row mr-2-vh">
+                <div class="user-personal-info-label">
+                  <label for="user-input-address"><span>Address</span></label>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    id="user-input-address"
+                    name="user-input-address"
+                    class="user-personal-info-input"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- End Address -->
+
+              <!-- Start Mobile -->
+              <div class="user-personal-info-row mr-2-vh">
+                <div class="user-personal-info-label">
+                  <label for="user-input-mobile"><span>Mobile</span></label>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    id="user-input-mobile"
+                    name="user-input-mobile"
+                    class="user-personal-info-input"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- End Mobile -->
+
+              <!-- Start Email -->
+              <div class="user-personal-info-row mr-2-vh">
+                <div class="user-personal-info-label">
+                  <label for="user-input-email"><span>Email</span></label>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    id="user-input-email"
+                    name="user-input-email"
+                    class="user-personal-info-input"
+                    type="email"
+                  />
+                </div>
+              </div>
+              <!-- End Email -->
+            </div>
+          </div>
+          <!-- End Personal info -->
+          <div id="user-staff-finance"></div>
+          <div id="btn-staff-save">
+            <!-- End Save Changes Button -->
+            <div id="user-panel-bottom" class="user-panel-bottom">
+              <button class="user-panel-save hover-point" type="submit">
+                <span class="save-btn-label">
+                  Save Changes
+                </span>
+              </button>
+            </div>
+          </div>
+        </form>
+        <!-- End Save Changes Button -->
+      </div>
+
+      <div class="user-panel-vSpacer">
+        <div class="user-panel-vSpacer1"></div>
+      </div>
+
+      <div class="user-sub-panel">
+        <div class="user-sub-panel-head">
+          <div class="user-sub-panel-head-container">
+            <div class="user-sub-panel-head-title">
+              <span>Subjects</span>
+            </div>
+          </div>
+
+          <div class="user-sub-panel-head-container1">
+            <div class="user-sub-panel-head-lineSpace"></div>
+          </div>
+
+          <div class="user-sub-panel-head-container2">
+            <span class="user-sub-panel-head-label">
+              School year:
+            </span>
+
+            <select name="sy" id="staff-sy" class="user-sub-panel-head-select">
+              <!-- Populate sy -->
+              <!-- Populate sy -->
+              <!-- Populate sy -->
+              <!-- Populate sy -->
+            </select>
+          </div>
+        </div>
+
+        <div class="user-sub-panel-content">
+          <div
+            id="staff-sub-panel-content-container"
+            class="user-sub-panel-content-container"
+          >
+            <!-- Subjects here -->
+            <!-- Subjects here -->
+            <!-- Subjects here -->
+            <!-- Subjects here -->
+            <!-- Subjects here -->
+          </div>
+
+          <div class="user-sub-panel-content-lineSpace"></div>
+
+          <!-- <div class="user-sub-panel-content-footer">
+            <button class="hover-point add-modal">
+              <img src="media/add.png" class="ico-add" />
+
+              <span class="add-label">
+                Add Module
+              </span>
+            </button>
+
+            <button class="hover-point publish-btn">
+              <span class="publish-btn-label">
+                Publish grades
+              </span>
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- End User Panel Content -->
+  </div>
+  <!-- End User Panel -->
+
+  <!-- Start Add Modal -->
+  <div id="addTeacher-Modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-close">&times;</span>
+        <h3 style="font-family: 'Montserrat', sans-serif;">Teacher Form</h3>
+      </div>
+
+      <div class="modal-body">
+        <!-- Form -->
+        <form id="tc_addForm" method="post">
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label for="gName">Given name</label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                id="gName"
+                name="gName"
+                type="text"
+                value="Neil Michael"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label for="mName">Middle name</label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                id="mName"
+                name="mName"
+                type="text"
+                value="Dagta"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label for="lName">Last name</label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                id="lName"
+                name="lName"
+                type="text"
+                value="Barnedo"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label for="email">Email address</label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                id="email"
+                name="email"
+                type="text"
+                value="test@test.com"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label for="mobile">Mobile</label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input-1"
+                id="mobile"
+                name="mobile"
+                type="text"
+                value="09752100019"
+              />
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-flow: row-reverse nowrap;
+              align-items: center;
+            "
+          >
+            <button class="modal-form-submit" type="submit">
+              <span
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 1.35vh;
+                  color: black;
+                  font-weight: 700;
+                  white-space: nowrap;
+                "
+              >
+                Submit
+              </span>
+            </button>
+          </div>
+        </form>
+        <!-- Form -->
+      </div>
+    </div>
+  </div>
+  <!-- End Add Modal -->
+</div>
+

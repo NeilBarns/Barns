@@ -1,0 +1,953 @@
+<div class="main-content-container">
+  <!-- Start Search panel -->
+  <div class="search-panel">
+    <form id="st_searchForm" method="post">
+      <div class="search-panel-head">
+        <!-- Start Search Bar -->
+
+        <div class="search-bar">
+          <div class="search-field">
+            <input
+              id="search-input"
+              name="search-input"
+              class="search-input"
+              value=""
+              placeholder="Search here"
+            />
+          </div>
+
+          <div class="search-btn">
+            <button class="btn-noStyle hover-point">
+              <img src="media/search.png" class="ico-search" />
+            </button>
+          </div>
+        </div>
+        <!-- End Search Bar -->
+
+        <div class="search-panel-subhead">
+          <button
+            id="filter-panel-btn"
+            type="button"
+            class="add-filter hover-point"
+          >
+            <span class="user-module-item-label" style="color: white;"
+              >Filters</span
+            >
+          </button>
+          <div id="filter-panel" class="filter-panel">
+            <div style="display: flex; flex-flow: row; align-items: center;">
+              <div
+                style="
+                  width: 100%;
+                  display: flex;
+                  flex-flow: column;
+                  width: 100%;
+                  align-self: center;
+                  justify-content: center;
+                "
+              >
+                <label
+                  for="filter-level"
+                  class="defaultFont-label-b"
+                  style="margin-bottom: 5px;"
+                  >Level:</label
+                >
+                <select
+                  id="filter-level"
+                  name="filter-level"
+                  class="filter-input-select"
+                >
+                  <option class="user-finance-info-option" value="all" selected
+                    >All</option
+                  >
+                  <option class="user-finance-info-option" value="Nursery 1"
+                    >Nursery 1</option
+                  >
+                  <option class="user-finance-info-option" value="Nursery 2"
+                    >Nursery 2</option
+                  >
+                  <option class="user-finance-info-option" value="Kinder"
+                    >Kinder</option
+                  >
+                  <option class="user-finance-info-option" value="Grade 1"
+                    >Grade 1</option
+                  >
+                  <option class="user-finance-info-option" value="Grade 2"
+                    >Grade 2</option
+                  >
+                  <option class="user-finance-info-option" value="Grade 3"
+                    >Grade 3</option
+                  >
+                </select>
+              </div>
+              <div
+                style="
+                  width: 100%;
+                  display: flex;
+                  flex-flow: column;
+                  align-self: flex-start;
+                  justify-content: center;
+                "
+              >
+                <label
+                  for="filter-sy"
+                  class="defaultFont-label-b"
+                  style="margin-bottom: 5px;"
+                  >School Year:</label
+                >
+                <select
+                  id="filter-sy"
+                  name="filter-sy"
+                  class="filter-input-select"
+                >
+                  <!-- <option class="user-sub-panel-head-option" value="2017-2018"
+                    >2017-2018</option
+                  >
+                  <option class="user-sub-panel-head-option" value="2018-2019"
+                    >2018-2019</option
+                  >
+                  <option class="user-sub-panel-head-option" value="2019-2020"
+                    >2019-2020</option
+                  >
+                  <option class="user-sub-panel-head-option" value="2020-2021" 
+                    >2020-2021</option
+                  > -->
+                </select>
+              </div>
+            </div>
+            <div
+              class="pad-t-1-vh"
+              style="display: flex; flex-flow: row; align-items: center;"
+            >
+              <div
+                style="
+                  width: 100%;
+                  display: flex;
+                  flex-flow: column;
+                  align-self: center;
+                  justify-content: center;
+                "
+              >
+                <label
+                  for="filter-section"
+                  class="defaultFont-label-b"
+                  style="margin-bottom: 5px;"
+                  >Section:</label
+                >
+                <select
+                  id="filter-section"
+                  name="filter-section"
+                  class="filter-input-select"
+                  style="width: 45%;"
+                >
+                  <option value="" selected disabled hidden>--</option>
+                </select>
+              </div>
+            </div>
+            <div
+              class="pad-t-1-vh"
+              style="display: flex; flex-flow: row; align-items: center;"
+            >
+              <span class="defaultFont-label-b mr-r-2-vh">User:</span>
+              <input
+                type="checkbox"
+                id="filter-cb-active"
+                name="filter-cb-active"
+                value="1"
+                checked
+              />
+              <label for="filter-cb-active" class="defaultFont-label mr-l-5-px"
+                >Active</label
+              ><br />
+
+              <input
+                type="checkbox"
+                id="filter-cb-inactive"
+                name="filter-cb-active"
+                value="0"
+                class="mr-l-10-px"
+              />
+              <label
+                for="filter-cb-inactive"
+                class="defaultFont-label mr-l-5-px"
+                >Inactive</label
+              ><br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="search-panel-content">
+      <div class="search-container">
+        <!-- Start Search items -->
+        <div id="search-items" class="search-container-1">
+          <!-- ITEMS GOES HERE -->
+          <!-- ITEMS GOES HERE -->
+          <!-- ITEMS GOES HERE -->
+        </div>
+        <!-- End Search items -->
+
+        <div class="search-panel-spacer"></div>
+        <!-- Start Add panel -->
+        <div id="btn-student-add">
+          <div class="search-panel-footer">
+            <button id="addStudent-Modal-btn" class="hover-point add-modal">
+              <img src="media/add.png" class="ico-add" />
+
+              <span class="add-label">
+                Enroll Student
+              </span>
+            </button>
+          </div>
+          <!-- End Add panel -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Search panel -->
+
+  <div class="panel-vSpacer"></div>
+
+  <!-- Start User Panel -->
+  <div id="user-panel" class="user-panel">
+    <!-- Start User Panel Head -->
+    <div class="user-panel-head">
+      <div class="user-panel-head-container">
+        <span id="user-panel-head-title" class="user-panel-head-title">
+          <!-- Barnedo, Neil Michael - 13058 -->
+        </span>
+      </div>
+
+      <div class="user-panel-head-container-1">
+        <div id="btn-student-activate" class="user-panel-activate">
+          <span class="user-panel-activate-label">
+            Activated
+          </span>
+
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- End User Panel Head -->
+
+    <!-- Start User Panel Content -->
+    <div class="user-panel-content">
+      <div id="user-info" class="user-info">
+        <form id="st_saveForm" method="post">
+          <div class="user-info-banner">
+            <div class="user-info-banner-container">
+              <div id="user-prof-pic" class="user-prof-pic">
+                <img
+                  src="media/profile/defaults/user.png"
+                  alt="User Profile"
+                  class="user-prof-pic-default"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="user-info-panel-control">
+            <button
+              id="expander-user-personal-info-container-btn"
+              type="button"
+              onclick="stud_personal_info()"
+              style="width: 2.5vh;"
+            >
+              <span id="expander-user-personal-info-container">-</span>
+            </button>
+
+            <div class="user-info-panel-control-label">
+              <span>Personal Information</span>
+            </div>
+          </div>
+
+          <div id="user-student-info">
+            <div
+              id="user-personal-info-container"
+              class="user-personal-info-container"
+            >
+              <!-- Start Surname -->
+              <div class="user-personal-info-row">
+                <div class="user-personal-info-label">
+                  <span>Surname</span>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    name="user-input-id"
+                    id="user-input-id"
+                    type="text"
+                    hidden
+                  />
+                  <input
+                    name="user-input-surname"
+                    id="user-input-surname"
+                    class="user-personal-info-input"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- End Surname -->
+
+              <!-- Start Given name -->
+              <div class="user-personal-info-row mr-2-vh">
+                <div class="user-personal-info-label">
+                  <span>Given name</span>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    id="user-input-givenname"
+                    name="user-input-givenname"
+                    class="user-personal-info-input"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- End Given name -->
+
+              <!-- Start Middle name -->
+              <div class="user-personal-info-row mr-2-vh">
+                <div class="user-personal-info-label">
+                  <span>Middle name</span>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    id="user-input-middlename"
+                    name="user-input-middlename"
+                    class="user-personal-info-input"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- End Middle name -->
+
+              <!-- Start Date of birth -->
+              <div class="user-personal-info-row mr-2-vh">
+                <div class="user-personal-info-label">
+                  <span>Date of birth</span>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    id="user-input-dob"
+                    name="user-input-dob"
+                    class="user-personal-info-input"
+                    type="date"
+                  />
+                </div>
+              </div>
+              <!-- End Date of birth -->
+
+              <div class="user-personal-info-row-spacer">
+                <div
+                  style="
+                    box-sixing: border-box;
+                    border-bottom: 1px solid rgb(230, 230, 230);
+                    background-color: white;
+                    height: fit-content;
+                    width: 100%;
+                  "
+                ></div>
+              </div>
+
+              <!-- Start Guardian Surname -->
+              <div class="user-personal-info-row mr-2-vh">
+                <div class="user-personal-info-label">
+                  <span>Guardian's Surname</span>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    id="user-input-gSurname"
+                    name="user-input-gSurname"
+                    class="user-personal-info-input"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- End Guardian Surname -->
+
+              <!-- Start Guardian Given name -->
+              <div class="user-personal-info-row mr-2-vh">
+                <div class="user-personal-info-label">
+                  <span>Guardian's Given name</span>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    id="user-input-gGivenname"
+                    name="user-input-gGivenname"
+                    class="user-personal-info-input"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- End Guardian Given name -->
+
+              <!-- Start Guardian Middle name -->
+              <div class="user-personal-info-row mr-2-vh">
+                <div class="user-personal-info-label">
+                  <span>Guardian's Middle name</span>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    id="user-input-gMiddlename"
+                    name="user-input-gMiddlename"
+                    class="user-personal-info-input"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- End Guardian Middle name -->
+
+              <!-- Start Relationship -->
+              <div class="user-personal-info-row mr-2-vh">
+                <div class="user-personal-info-label">
+                  <span>Relationship</span>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    id="user-input-relationship"
+                    name="user-input-relationship"
+                    class="user-personal-info-input"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- End Relationship -->
+
+              <!-- Start Address -->
+              <div class="user-personal-info-row mr-2-vh">
+                <div class="user-personal-info-label">
+                  <span>Guardian's Address</span>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    id="user-input-gAddress"
+                    name="user-input-gAddress"
+                    class="user-personal-info-input"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- End Address -->
+
+              <!-- Start Mobile -->
+              <div class="user-personal-info-row mr-2-vh">
+                <div class="user-personal-info-label">
+                  <span>Mobile</span>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    id="user-input-mobile"
+                    name="user-input-mobile"
+                    class="user-personal-info-input"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- End Mobile -->
+
+              <!-- Start Email -->
+              <div class="user-personal-info-row mr-2-vh">
+                <div class="user-personal-info-label">
+                  <span>Email</span>
+                </div>
+
+                <div class="user-personal-info-field">
+                  <input
+                    id="user-input-email"
+                    name="user-input-email"
+                    class="user-personal-info-input"
+                    type="email"
+                  />
+                </div>
+              </div>
+              <!-- End Email -->
+
+              <!-- End Save Changes Button -->
+              <div id="btn-student-save" class="user-panel-bottom">
+                <button class="user-panel-save hover-point" type="submit">
+                  <span class="save-btn-label">
+                    Save Changes
+                  </span>
+                </button>
+              </div>
+              <!-- End Save Changes Button -->
+            </div>
+          </div>
+        </form>
+        <div id="user-student-finance">
+          <div class="user-info-panel-control">
+            <button
+              id="expander-user-finance-info-container-btn"
+              type="button"
+              onclick="stud_finance_info()"
+              style="width: 2.5vh;"
+            >
+              <span id="expander-user-finance-info-container">-</span>
+            </button>
+
+            <div class="user-info-panel-control-label">
+              Finance
+            </div>
+          </div>
+
+          <div
+            id="user-finance-info-container"
+            class="user-finance-info-container"
+          >
+            <!-- Start School year -->
+            <div class="user-finance-info-row">
+              <div class="user-finance-info-label">
+                <span>
+                  School year:
+                </span>
+                <span id="student-finance-sy" style="font-weight: bold;">
+                  <!-- populate sy -->
+                </span>
+              </div>
+            </div>
+            <!-- End School year -->
+
+            <div class="user-finance-info-row-spacer">
+              <div
+                style="
+                  box-sixing: border-box;
+                  border-bottom: 1px solid rgb(230, 230, 230);
+                  background-color: white;
+                  height: fit-content;
+                  width: 100%;
+                "
+              ></div>
+            </div>
+
+            <!-- Start Finance Panel -->
+            <div class="finance-panel">
+              <!-- fee table -->
+              <div style="margin-top: 20px;">
+                <table id="tbl-fee" class="defaultFont-label">
+                  <thead style="border-bottom: 1px solid rgb(177, 177, 177);">
+                    <tr>
+                      <th hidden>Id</th>
+                      <th class="w-70">Fee Description</th>
+                      <th class="w-25">Amount</th>
+                      <th class="w-5"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- poplate fees -->
+                    <!-- poplate fees -->
+                    <!-- poplate fees -->
+                    <!-- poplate fees -->
+                  </tbody>
+                </table>
+                <table
+                  class="defaultFont-label"
+                  style="color: rgb(167, 167, 167);"
+                >
+                  <tr>
+                    <td class="w-70">
+                      <input
+                        id="addFeeName"
+                        type="text"
+                        class="defaultFont-label input-noDesign w-100"
+                        placeholder="Description.."
+                      />
+                    </td>
+                    <td class="w-25">
+                      <input
+                        id="addFeeAmount"
+                        type="number"
+                        class="defaultFont-label input-noDesign w-100"
+                        placeholder="Amount.."
+                      />
+                    </td>
+                    <td class="w-5" style="text-align: center;">
+                      <img
+                        src="media/add.png"
+                        class="ico-10px hover-point"
+                        alt="Add row"
+                        onclick="addFeeRow()"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div style="margin-top: 10px;">
+                <table id="tbl-payment" class="defaultFont-label">
+                  <thead style="border-bottom: 1px solid rgb(177, 177, 177);">
+                    <tr>
+                      <th hidden>Id</th>
+                      <th class="w-70">Payment Description</th>
+                      <th class="w-25">Amount</th>
+                      <th class="w-5"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- populate payments -->
+                    <!-- populate payments -->
+                    <!-- populate payments -->
+                    <!-- populate payments -->
+                  </tbody>
+                </table>
+
+                <table
+                  class="defaultFont-label"
+                  style="color: rgb(167, 167, 167);"
+                >
+                  <tr>
+                    <td class="w-70">
+                      <input
+                        id="addPaymentName"
+                        type="text"
+                        class="defaultFont-label input-noDesign w-100"
+                        placeholder="Description.."
+                      />
+                    </td>
+                    <td class="w-25">
+                      <input
+                        id="addPaymentAmount"
+                        type="number"
+                        class="defaultFont-label input-noDesign w-100"
+                        placeholder="Amount.."
+                      />
+                    </td>
+                    <td class="w-5" style="text-align: center;">
+                      <img
+                        src="media/add.png"
+                        class="ico-10px hover-point"
+                        alt="Add row"
+                        onclick="addPaymentRow()"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="user-finance-installment-row">
+                <div
+                  class="user-finance-info-label"
+                  style="margin-right: 70px;"
+                >
+                  <span>
+                    Installment:
+                  </span>
+                  <select
+                    name="stud-select-installment"
+                    id="stud-select-installment"
+                    class="modal-form-studlevel defaultFont-label"
+                    style="margin-left: 10px;"
+                  >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- spacer -->
+              <div class="finance-panel-spacer">
+                <div
+                  style="
+                    box-sixing: border-box;
+                    border-bottom: 1px solid rgb(230, 230, 230);
+                    background-color: white;
+                    height: fit-content;
+                    width: 100%;
+                  "
+                ></div>
+              </div>
+
+              <span class="finance-field-label" style="font-weight: bold;">
+                Total Fees: &nbsp;&nbsp;&nbsp;&nbsp; ₱
+                <span id="total-fee">0.00</span>
+              </span>
+
+              <span class="finance-field-label" style="font-weight: bold;">
+                Total Payments: &nbsp;&nbsp;&nbsp;&nbsp; ₱
+                <span id="total-payment">0.00</span>
+              </span>
+
+              <!-- spacer -->
+              <div class="finance-panel-spacer">
+                <div
+                  style="
+                    box-sixing: border-box;
+                    border-bottom: 1px solid rgb(230, 230, 230);
+                    background-color: white;
+                    height: fit-content;
+                    width: 100%;
+                  "
+                ></div>
+              </div>
+
+              <span
+                class="finance-field-label"
+                style="font-weight: bold; margin-bottom: 20px;"
+              >
+                Balance: &nbsp;&nbsp;&nbsp;&nbsp; ₱
+                <span id="total-balance">0.00</span>
+              </span>
+            </div>
+            <!-- End Finance Panel -->
+          </div>
+          <!-- End Save Changes Button -->
+          <div id="btn-student-finance-save" class="user-panel-bottom">
+            <button
+              id="st_saveFinance"
+              class="user-panel-save hover-point"
+              type="submit"
+            >
+              <span class="save-btn-label">
+                Save Changes
+              </span>
+            </button>
+          </div>
+          <!-- End Save Changes Button -->
+        </div>
+      </div>
+
+      <div class="user-panel-vSpacer">
+        <div class="user-panel-vSpacer1"></div>
+      </div>
+
+      <div class="user-sub-panel">
+        <div class="user-sub-panel-head">
+          <div class="user-sub-panel-head-container">
+            <div class="user-sub-panel-head-title">
+              <span>Subjects</span>
+            </div>
+          </div>
+
+          <div class="user-sub-panel-head-container1">
+            <div class="user-sub-panel-head-lineSpace"></div>
+          </div>
+
+          <div class="user-sub-panel-head-container2">
+            <span class="user-sub-panel-head-label">
+              School year:
+            </span>
+
+            <select
+              name="sy"
+              id="student-sy"
+              class="user-sub-panel-head-select"
+            >
+              <!-- Populate sy -->
+              <!-- Populate sy -->
+              <!-- Populate sy -->
+              <!-- Populate sy -->
+            </select>
+          </div>
+        </div>
+
+        <div class="user-sub-panel-content">
+          <div
+            id="student-sub-panel-content-container"
+            class="user-sub-panel-content-container"
+          >
+            <!-- Subject items -->
+            <!-- Subject items -->
+            <!-- Subject items -->
+            <!-- Subject items -->
+            <!-- Subject items -->
+          </div>
+          <div class="user-sub-panel-content-lineSpace"></div>
+
+          <div class="user-sub-panel-content-footer">
+            <button id="btn-publish" class="hover-point publish-btn">
+              <span class="publish-btn-label">
+                Publish grades
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- End User Panel Content -->
+    </div>
+    <!-- End User Panel -->
+  </div>
+  <!-- Start Add Modal -->
+  <div id="addStudent-Modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-close">&times;</span>
+        <h3 style="font-family: 'Montserrat', sans-serif;">Student Form</h3>
+      </div>
+
+      <div class="modal-body">
+        <!-- Form -->
+        <form id="st_addForm" method="POST">
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label for="gName">Given name</label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                id="gName"
+                name="gName"
+                type="text"
+                value="Neil Michael"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label for="mName">Middle name</label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                id="mName"
+                name="mName"
+                type="text"
+                value="Dagta"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label for="lName">Last name</label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                id="lName"
+                name="lName"
+                type="text"
+                value="Barnedo"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label for="email">Guardian's Email address</label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input"
+                id="email"
+                name="email"
+                type="text"
+                value="test@test.com"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label for="mobile">Guardian's Mobile</label>
+            </div>
+            <div class="modal-form-line-input">
+              <input
+                class="modal-form-input-1"
+                id="mobile"
+                name="mobile"
+                type="text"
+                value="09752100019"
+              />
+            </div>
+          </div>
+
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-form-studlevel">Level</label>
+            </div>
+            <div class="modal-form-line-input">
+              <select
+                name="level"
+                class="modal-form-input-1"
+                id="modal-form-studlevel"
+              >
+                <option value="" selected disabled hidden>Choose one..</option>
+                <option class="user-finance-info-option" value="Nursery 1"
+                  >Nursery 1</option
+                >
+                <option class="user-finance-info-option" value="Nursery 2"
+                  >Nursery 2</option
+                >
+                <option class="user-finance-info-option" value="Kinder"
+                  >Kinder</option
+                >
+                <option class="user-finance-info-option" value="Grade 1"
+                  >Grade 1</option
+                >
+                <option class="user-finance-info-option" value="Grade 2"
+                  >Grade 2</option
+                >
+                <option class="user-finance-info-option" value="Grade 3"
+                  >Grade 3</option
+                >
+              </select>
+            </div>
+          </div>
+
+          <div class="modal-form-line">
+            <div class="modal-form-line-label reqLabel">
+              <label for="modal-form-studSection">Section</label>
+            </div>
+            <div class="modal-form-line-input">
+              <select
+                name="section"
+                class="modal-form-input-1"
+                id="modal-form-studSection"
+              >
+                <option value="" selected disabled hidden>--</option>
+              </select>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              flex-flow: row-reverse nowrap;
+              align-items: center;
+            "
+          >
+            <button class="modal-form-submit" type="submit">
+              <span
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 1.35vh;
+                  color: black;
+                  font-weight: 700;
+                  white-space: nowrap;
+                "
+              >
+                Submit
+              </span>
+            </button>
+          </div>
+        </form>
+        <!-- Form -->
+      </div>
+    </div>
+  </div>
+  <!-- End Add Modal -->
+</div>
