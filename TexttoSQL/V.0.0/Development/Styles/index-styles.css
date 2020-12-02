@@ -200,7 +200,7 @@ body {
   display: flex;
   flex-flow: column nowrap;
   font-family: "calibri";
-  font-size: 0.75vw;
+  font-size: .8vw;
   border-right: 1px solid #adb5bd;
 }
 
@@ -2291,7 +2291,7 @@ tr:nth-child(even) {
 
 div.combobox {
   font-family: Calibri, sans-serif;
-  font-size: 12px;
+  font-size: 0.8vw;
   background-color: #FFFFFF;
 }
 
@@ -2336,7 +2336,7 @@ div.combobox .dropdownlist a.light {
 div.combobox .dropdownlist,
 input {
   font-family: Tahoma;
-  font-size: 12px;
+  font-size: 0.7vw;
 }
 
 div.combobox input {
@@ -2344,7 +2344,7 @@ div.combobox input {
   width: 80%;
   height: 1.5vw;
   font-family: Calibri;
-  font-size: 0.7vw;
+  font-size: 0.71vw;
   border: 2px solid #a5a58d;
   outline: none;
   padding-left: 1vw;
