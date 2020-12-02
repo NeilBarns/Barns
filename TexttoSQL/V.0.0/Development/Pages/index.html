@@ -2,26 +2,31 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
 
-  <link href="//fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+  <!--  <link href="//fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />-->
+  <!--
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+-->
 
+  <!--
   <meta http-equiv="cache-control" content="no-cache" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="-1" />
 
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
+-->
 
-  <link href="Styles/index-styles.css" rel="stylesheet" />
-  <link href="Styles/user-styles.css" rel="stylesheet" />
+  <link href="../Styles/index-styles.css" rel="stylesheet" />
+  <!--  <link href="Styles/user-styles.css" rel="stylesheet" />-->
 </head>
 
 <body>
   <!-- Start Head Navigation -->
   <div class="main-head">
+    <!--
     <div style="
           box-sixing: border-box;
           border: 0px solid black;
@@ -47,7 +52,7 @@
               padding-left: 3vh;
             " class="nav-container">
           <div id="head-nav-home" class="nav-item-conainter hover-point">
-            <!-- <div class="head-nav" onclick="toHome()"> -->
+             <div class="head-nav" onclick="toHome()"> 
             <div class="head-nav">
               <span>Home</span>
             </div>
@@ -59,20 +64,554 @@
 
       </div>
     </div>
+-->
+
+
+
+    <div style="height: 100%; display: flex; align-items: center; padding-left: 1vw;">
+
+      <img class="analance-logo" src="../Media/new_analance_Logo_b_250w.png">
+
+    </div>
+
+
+    <div>
+    </div>
+
+
   </div>
-  <input id="user_designation" hidden type="text" value="<?php echo $_SESSION['login_designation'];?>" />
+  <!--  <input id="user_designation" hidden type="text" value="<?php echo $_SESSION['login_designation'];?>" />-->
   <!-- End Head Navigation -->
 
   <!-- Start Main Content -->
   <div id="operations" class="main-content">
-    <!--CENTER OF OPERATIONS-->
-    <!--CENTER OF OPERATIONS-->
-    <!--CENTER OF OPERATIONS-->
-    <!--CENTER OF OPERATIONS-->
-    <!--CENTER OF OPERATIONS-->
+
+    <div class="main-content-left">
+
+      <div class="main-content-left-label">
+
+        DATA SET
+
+      </div>
+
+      <div class="main-content-left-data-list">
+
+        <label class="container">
+          <input type="radio" checked="checked" name="radio">
+          <img class="dataset_logo" src="../Media/server.png">
+          <span class="checkmark">
+            Sales</span>
+        </label>
+        <label class="container">
+          <input type="radio" checked="checked" name="radio">
+          <img class="dataset_logo" src="../Media/server.png">
+          <span class="checkmark">
+            Adventure_Works</span>
+        </label>
+
+        <label class="container">
+          <input type="radio" checked="checked" name="radio">
+          <img class="dataset_logo" src="../Media/server.png">
+          <span class="checkmark">
+            Retail_Sales</span>
+        </label>
+
+        <label class="container">
+          <input type="radio" checked="checked" name="radio">
+          <img class="dataset_logo" src="../Media/server.png">
+          <span class="checkmark">
+            Sample_dataset</span>
+        </label>
+
+      </div>
+
+    </div>
+
+    <div class="main-content-right">
+
+      <div class="main-content-right-top">
+
+        <div class="search-container-input-box">
+
+          <div class="ask-me-label">
+
+            Ask question about <b>Sales</b>
+
+          </div>
+
+          <div>
+
+            <div class="combobox">
+              <input type="text" name="comboboxfieldname" id="cb_identifier" placeholder="Ask a question about this data..">
+
+              <span style="visibility: hidden">▼</span>
+              <div class="dropdownlist">
+
+                <a id="lb1-al" role="option">
+                  Alabama
+                </a>
+                <a id="lb1-ak" role="option">
+                  Alaska
+                </a>
+                <a id="lb1-as" role="option">
+                  American Samoa
+                </a>
+                <a id="lb1-az" role="option">
+                  Arizona
+                </a>
+                <a id="lb1-ar" role="option">
+                  Arkansas
+                </a>
+                <a id="lb1-ca" role="option">
+                  California
+                </a>
+                <a id="lb1-co" role="option">
+                  Colorado
+                </a>
+                <a id="lb1-ct" role="option">
+                  Connecticut
+                </a>
+                <a id="lb1-de" role="option">
+                  Delaware
+                </a>
+                <a id="lb1-dc" role="option">
+                  District of Columbia
+                </a>
+                <a id="lb1-fl" role="option">
+                  Florida
+                </a>
+                <a id="lb1-ga" role="option">
+                  Georgia
+                </a>
+                <a id="lb1-gm" role="option">
+                  Guam
+                </a>
+                <a id="lb1-hi" role="option">
+                  Hawaii
+                </a>
+                <a id="lb1-id" role="option">
+                  Idaho
+                </a>
+                <a id="lb1-il" role="option">
+                  Illinois
+                </a>
+                <a id="lb1-in" role="option">
+                  Indiana
+                </a>
+                <a id="lb1-ia" role="option">
+                  Iowa
+                </a>
+                <a id="lb1-ks" role="option">
+                  Kansas
+                </a>
+                <a id="lb1-ky" role="option">
+                  Kentucky
+                </a>
+                <a id="lb1-la" role="option">
+                  Louisiana
+                </a>
+                <a id="lb1-me" role="option">
+                  Maine
+                </a>
+                <a id="lb1-md" role="option">
+                  Maryland
+                </a>
+                <a id="lb1-ma" role="option">
+                  Massachusetts
+                </a>
+                <a id="lb1-mi" role="option">
+                  Michigan
+                </a>
+                <a id="lb1-mn" role="option">
+                  Minnesota
+                </a>
+                <a id="lb1-ms" role="option">
+                  Mississippi
+                </a>
+                <a id="lb1-mo" role="option">
+                  Missouri
+                </a>
+                <a id="lb1-mt" role="option">
+                  Montana
+                </a>
+                <a id="lb1-ne" role="option">
+                  Nebraska
+                </a>
+                <a id="lb1-nv" role="option">
+                  Nevada
+                </a>
+                <a id="lb1-nh" role="option">
+                  New Hampshire
+                </a>
+                <a id="lb1-nj" role="option">
+                  New Jersey
+                </a>
+                <a id="lb1-nm" role="option">
+                  New Mexico
+                </a>
+                <a id="lb1-ny" role="option">
+                  New York
+                </a>
+                <a id="lb1-nc" role="option">
+                  North Carolina
+                </a>
+                <a id="lb1-nd" role="option">
+                  North Dakota
+                </a>
+                <a id="lb1-mp" role="option">
+                  Northern Marianas Islands
+                </a>
+                <a id="lb1-oh" role="option">
+                  Ohio
+                </a>
+                <a id="lb1-ok" role="option">
+                  Oklahoma
+                </a>
+                <a id="lb1-or" role="option">
+                  Oregon
+                </a>
+                <a id="lb1-pa" role="option">
+                  Pennsylvania
+                </a>
+                <a id="lb1-pr" role="option">
+                  Puerto Rico
+                </a>
+                <a id="lb1-ri" role="option">
+                  Rhode Island
+                </a>
+                <a id="lb1-sc" role="option">
+                  South Carolina
+                </a>
+                <a id="lb1-sd" role="option">
+                  South Dakota
+                </a>
+                <a id="lb1-tn" role="option">
+                  Tennessee
+                </a>
+                <a id="lb1-tx" role="option">
+                  Texas
+                </a>
+                <a id="lb1-ut" role="option">
+                  Utah
+                </a>
+                <a id="lb1-ve" role="option">
+                  Vermont
+                </a>
+                <a id="lb1-va" role="option">
+                  Virginia
+                </a>
+                <a id="lb1-vi" role="option">
+                  Virgin Islands
+                </a>
+                <a id="lb1-wa" role="option">
+                  Washington
+                </a>
+                <a id="lb1-wv" role="option">
+                  West Virginia
+                </a>
+                <a id="lb1-wi" role="option">
+                  Wisconsin
+                </a>
+                <a id="lb1-wy" role="option">
+                  Wyoming
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-container-input">
+
+          <div class="picked-filters">
+
+            <span class="suggestion-label">Detected keywords</span>
+
+            <div class="suggestion-container">
+
+              <div class="chosen-item">
+
+                <span>Sum of Sales</span>
+
+                <img src="../Media/check-mark.png">
+
+              </div>
+
+              <div class="chosen-item">
+
+                <span>Average Sales for November</span>
+
+                <img src="../Media/check-mark.png">
+
+              </div>
+
+              <div class="chosen-item">
+
+                <span>Top 5 Sales for year 2020</span>
+
+                <img src="../Media/check-mark.png">
+
+              </div>
+
+              <div class="chosen-item">
+
+                <span>Sum of Sales</span>
+
+                <img src="../Media/check-mark.png">
+
+              </div>
+
+              <div class="chosen-item">
+
+                <span>Average Sales for November</span>
+
+                <img src="../Media/check-mark.png">
+
+              </div>
+
+              <div class="chosen-item">
+
+                <span>Top 5 Sales for year 2020</span>
+
+                <img src="../Media/check-mark.png">
+
+              </div>
+
+              <div class="chosen-item">
+
+                <span>Sum of Sales</span>
+
+                <img src="../Media/check-mark.png">
+
+              </div>
+
+              <div class="chosen-item">
+
+                <span>Average Sales for November</span>
+
+                <img src="../Media/check-mark.png">
+
+              </div>
+
+              <div class="chosen-item">
+
+                <span>Top 5 Sales for year 2020</span>
+
+                <img src="../Media/check-mark.png">
+
+              </div>
+
+              <div class="chosen-item">
+
+                <span>Sum of Sales</span>
+
+                <img src="../Media/check-mark.png">
+
+              </div>
+
+              <div class="chosen-item">
+
+                <span>Average Sales for November</span>
+
+                <img src="../Media/check-mark.png">
+
+              </div>
+
+              <div class="chosen-item">
+
+                <span>Top 5 Sales for year 2020</span>
+
+                <img src="../Media/check-mark.png">
+
+              </div>
+
+              <div class="chosen-item">
+
+                <span>Average Sales for November</span>
+
+                <img src="../Media/check-mark.png">
+
+              </div>
+
+              <div class="chosen-item">
+
+                <span>Average Sales for November</span>
+
+                <img src="../Media/check-mark.png">
+
+              </div>
+
+              <div class="chosen-item">
+
+                <span>Average Sales for November</span>
+
+                <img src="../Media/check-mark.png">
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="search-container">
+
+            <span class="suggestion-label">Suggestions</span>
+
+            <div class="suggestion-container">
+
+              <div class="suggested-item">
+
+                <span>Sum of Sales</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+              <div class="suggested-item">
+
+                <span>Average Sales for November</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+              <div class="suggested-item">
+
+                <span>Top 5 Sales for year 2020</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+              <div class="suggested-item">
+
+                <span>Sum of Sales</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+              <div class="suggested-item">
+
+                <span>Average Sales for November</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+              <div class="suggested-item">
+
+                <span>Top 5 Sales for year 2020</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+              <div class="suggested-item">
+
+                <span>Sum of Sales</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+              <div class="suggested-item">
+
+                <span>Average Sales for November</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+              <div class="suggested-item">
+
+                <span>Top 5 Sales for year 2020</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+              <div class="suggested-item">
+
+                <span>Top 5 Sales for year 2020</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+              <div class="suggested-item">
+
+                <span>Sum of Sales</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+              <div class="suggested-item">
+
+                <span>Average Sales for November</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+              <div class="suggested-item">
+
+                <span>Top 5 Sales for year 2020</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+              <div class="suggested-item">
+
+                <span>Top 5 Sales for year 2020</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+              <div class="suggested-item">
+
+                <span>Sum of Sales</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+              <div class="suggested-item">
+
+                <span>Average Sales for November</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+              <div class="suggested-item">
+
+                <span>Top 5 Sales for year 2020</span>
+
+                <img src="../Media/plus.png">
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="graphing">
+
+
+      </div>
+
+    </div>
+
   </div>
   <!-- End Main Content -->
-  <div id="loadingScreen" class="loading-content"></div>
+  <!--  <div id="loadingScreen" class="loading-content"></div>-->
 </body>
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
@@ -82,7 +621,11 @@
 
 <script type="text/javascript" language="javascript">
   var scrp = [
-    "jsControls/index-events.js",
+    //    "../Controls/index-events.js",
+    "../Controls/listboxOption.js",
+    "../Controls/listbox.js",
+    "../Controls/combobox-list.js",
+    "../Controls/combobox.js",
     //,"jsControls/students-events.js",
   ];
 
@@ -97,5 +640,20 @@
   }
 
 </script>
+
+<script type="text/javascript" charset="utf-8" src="../Controls/combobox.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+  var no = new ComboBox('cb_identifier');
+
+</script>
+
+<!--
+<script src="../Controls/listbox.js" type="text/javascript" language="javascript">
+
+
+
+</script>
+-->
 
 </html>
